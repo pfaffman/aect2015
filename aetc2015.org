@@ -1,0 +1,54 @@
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/2.5.0/
+#+REVEAL_ROOT: reveal.js
+#+REVEAL_THEME: sky 
+#+REVEAL_THEME: simple
+#+REVEAL_THEME: serif 
+#+REVEAL_EXTRA_CSS: stylesheet.css
+#+REVEAL_HLEVEL: 1
+#+REVEAL-SLIDE-NUMBER: t
+#+REVEAL_SLIDE_NUMBER: t
+#+REVEAL_PROGRESS: t
+#+OPTIONS: num:nil
+# notes at https://github.com/yjwen/org-reveal
+#+Title: Double-Flipped Classrooms and Online Learning Tools
+#+Author: Jay Pfaffman
+#+Email: pfaffman@southalabama.edu
+
+# +OPTIONS: reveal_width:1000
+# WTF +REVEAL_MARGIN:-10
+#+NOREVEAL_MIN_SCALE: 1
+#+NOREVEAL_MAX_SCALE: 4
+#+OPTIONS: toc:nil reveal_mathjax:t width:5 
+#+REVEAL_TRANS: zoom
+#+REVEAL_TRANS: concave
+#+REVEAL_TRANS: none
+
+** The Flipped Classroom Hope
+
+#+CAPTION: From: http://www.netop.com/classroom-management-software/results/flipped-classroom.htm http://goo.gl/b0eR5a
+#+NAME: Flipped Classroom
+[[file:flipped.png][file:~/usa/presentations/2015aetc/flipped.png]]
+
+** The Standard Classroom
+
+- Read a textbook
+- Do something in class
+
+** The Flipped Classroom Cynic
+
+- Watch a video
+- Do something in class
+
+** The Teachable Moment
+
+#+CAPTION: from http://reuvencarlyle36.com/2010/11/28/seattle-public-schools-a-teachable-moment/ -- http://goo.gl/Nq7PJo
+#+NAME:   Teachable Moment
+[[./teachablemoment.gif]]
+
+
+** Preparation for Future Learning (PFL)
+
+- Do and exploration activity
+- Get an "Aha!" lecture 
+
+** PFL Example
