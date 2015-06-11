@@ -41,9 +41,9 @@
 
 ** The Teachable Moment
 
+#+ATTR_REVEAL: :frag (none roll-in) 
 #+CAPTION: from http://reuvencarlyle36.com/2010/11/28/seattle-public-schools-a-teachable-moment/ -- http://goo.gl/Nq7PJo
 #+NAME:   Teachable Moment
-#+ATTR_REVEAL: :frag (none roll-in) 
 [[./teachablemoment.gif]]
 
 
@@ -121,5 +121,5 @@ Efficiency and Innovation in Transfer from http://aaalab.stanford.edu/
 Jay Pfaffman <pfaffman@southalabama.edu>
 
 
-- https://github.com/pfaffman/aect2015
+- [[https://literatecomputing.com/c/quests][htts://literatecomputing.com/]]
 - http://www.southalabama.edu/colleges/coe/ps/emt-ms.html
