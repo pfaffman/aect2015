@@ -68,6 +68,7 @@ Six hear these words, spoken 1 second apart.
 car, sky, apple, book, cup, lock, coat, light, bush, iron, water, house, tape, file, glass, dog, cloud,
 hand, chair, bag
 
+#+ATTR_REVEAL: :frag (roll-in roll-in roll-in roll-in roll-in ) 
 1. bag, hand, chair, cloud, sky, light
 2. bag, chair, hand, car, sky, book, house, bush
 3. hand, bag, chair, cloud, car, lock, dog
@@ -95,17 +96,6 @@ Efficiency and Innovation in Transfer from http://aaalab.stanford.edu/
 - Building-level technology coordinators
 - Teachers who want to use technology
 
-** Courses
-
-- EDM 510 Microcomputing Systems in Education
-- EDM 520 Computer Applications In Education
-- EDM 580 Information Literacy
-- EDM 584 Educational Technology Lab
-- EDM 590 Special Topics
-- EDM 591 Trends and Issues in Educational Media
-- ISD 581 Hypermedia Tools
-- EPY 502 Psychology of Learning and Learners
-
 ** Problem-based Instruction
 
 
@@ -115,6 +105,19 @@ Efficiency and Innovation in Transfer from http://aaalab.stanford.edu/
 #+ATTR_REVEAL: :frag (none roll-in) 
 - Solving Problems rather than following directions
 
+
+** Courses -- 30 Hours
+
+- EDM 510 Microcomputing Systems in Education
+- EDM 520 Computer Applications In Education
+- EDM 580 Information Literacy
+- EDM 584 Educational Technology Lab
+- EDM 590 Special Topics
+- EDM 591 Trends and Issues in Educational Media
+- ISD 581 Hypermedia Tools
+- EPY 502 Psychology of Learning and Learners
+- Elective 1
+- Elective 2
 
 * Thanks
 
