@@ -1,5 +1,5 @@
-#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/2.5.0/
 #+REVEAL_ROOT: reveal.js
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/2.5.0/
 #+REVEAL_THEME: sky 
 #+REVEAL_THEME: simple
 #+REVEAL_THEME: serif 
@@ -27,7 +27,7 @@
 
 #+CAPTION: From: http://www.netop.com/classroom-management-software/results/flipped-classroom.htm http://goo.gl/b0eR5a
 #+NAME: Flipped Classroom
-[[file:flipped.png][file:~/usa/presentations/2015aetc/flipped.png]]
+[[./flipped.png]]
 
 ** The Standard Classroom
 
@@ -43,12 +43,65 @@
 
 #+CAPTION: from http://reuvencarlyle36.com/2010/11/28/seattle-public-schools-a-teachable-moment/ -- http://goo.gl/Nq7PJo
 #+NAME:   Teachable Moment
+#+ATTR_REVEAL: :frag (none roll-in) 
 [[./teachablemoment.gif]]
 
 
 ** Preparation for Future Learning (PFL)
 
-- Do and exploration activity
+- Do an exploration activity
 - Get an "Aha!" lecture 
 
-** PFL Example
+** PFL Stats 
+
+Come up with a way to calculate a number that describes each of these
+data sets. 
+
+- 1 2 3 4 5 6 7 8 9
+- 4 5 6 4 5 6 4 5 6
+- 1 1 1 1 5 9 9 9 9
+
+** PFL Psychology
+
+Six hear these words, spoken 1 second apart.
+
+car, sky, apple, book, cup, lock, coat, light, bush, iron, water, house, tape, file, glass, dog, cloud,
+hand, chair, bag
+
+1. bag, hand, chair, cloud, sky, light
+2. bag, chair, hand, car, sky, book, house, bush
+3. hand, bag, chair, cloud, car, lock, dog
+4. bag, hand, chair, dog, car, apple, sky, water, glass
+5. bag, chair, car, iron, apple, cup, water, light
+
+** PFL Treatment
+
+1. Analyze, lecture
+2. Summarize, lecture  
+3. analyze, analyze
+
+** PFL Results
+
+[[./tft.png]]
+
+** PFL Resources
+
+Efficiency and Innovation in Transfer from http://aaalab.stanford.edu/ 
+
+
+* South Alabama Masters in Educational Media and Technology
+
+** Designed for teacher technology leaders
+
+- Building-level technology coordinators
+- Teachers who want to use technology
+
+** 
+
+
+* Thanks
+
+Jay Pfaffman <pfaffman@southalabama.edu>
+
+
+https://github.com/pfaffman/aect2015

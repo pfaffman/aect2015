@@ -1,0 +1,36 @@
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/2.5.0/
+#+REVEAL_ROOT: reveal.js
+#+REVEAL_THEME: sky 
+#+REVEAL_THEME: simple
+#+REVEAL_THEME: serif 
+#+REVEAL_EXTRA_CSS: stylesheet.css
+#+REVEAL_HLEVEL: 1
+#+REVEAL-SLIDE-NUMBER: t
+#+REVEAL_SLIDE_NUMBER: t
+#+REVEAL_PROGRESS: t
+#+OPTIONS: num:nil
+# notes at https://github.com/yjwen/org-reveal
+#+Title: Double-Flipped Classrooms and Online Learning Tools
+#+Author: Jay Pfaffman
+#+Email: pfaffman@southalabama.edu
+
+# +OPTIONS: reveal_width:1000
+# WTF +REVEAL_MARGIN:-10
+#+NOREVEAL_MIN_SCALE: 1
+#+NOREVEAL_MAX_SCALE: 4
+#+OPTIONS: toc:nil reveal_mathjax:t width:5 
+#+REVEAL_TRANS: zoom
+#+REVEAL_TRANS: concave
+#+REVEAL_TRANS: none
+
+** The Standard Classroom
+
+- Read a textbook
+- Do something in class
+
+** The Flipped Classroom
+
+- Watch a video
+- Do something in class
+
+** Preparation for Future Learning
