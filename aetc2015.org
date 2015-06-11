@@ -124,5 +124,6 @@ Efficiency and Innovation in Transfer from http://aaalab.stanford.edu/
 Jay Pfaffman <pfaffman@southalabama.edu>
 
 
-- [[https://literatecomputing.com/c/quests][htts://literatecomputing.com/]]
+- http://jaypfaffman.com/aetc2015/
+- [[https://literatecomputing.com/c/quests][literatecomputing.com]]
 - http://www.southalabama.edu/colleges/coe/ps/emt-ms.html
