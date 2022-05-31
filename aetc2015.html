@@ -1,102 +1,323 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<meta charset="utf-8"/>
+<!-- 2022-05-31 Tue 13:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Double-Flipped Classrooms and Online Learning Tools</title>
-<meta name="author" content="(Jay Pfaffman)"/>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Jay Pfaffman" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
-<link rel="stylesheet" href="reveal.js/css/reveal.css"/>
-<link rel="stylesheet" href="reveal.js/css/theme/serif.css" id="theme"/>
-<link rel="stylesheet" href="stylesheet.css"/>
-<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-<script>
-    if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'reveal.js/css/print/pdf.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-    }
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
 </script>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
-<div class="reveal">
-<div class="slides">
-<section id="sec-title-slide">
-<h1>Double-Flipped Classrooms and Online Learning Tools</h1>
-<h2>Jay Pfaffman</h2>
-<h2><a href="mailto:pfaffman@southalabama.edu">pfaffman@southalabama.edu</a></h2>
-<h2></h2>
-</section>
+<div id="content">
+<h1 class="title">Double-Flipped Classrooms and Online Learning Tools</h1>
 
-</section>
-<section id="slide-sec-0-1">
-<h3 id="sec-0-1">The Flipped Classroom Hope</h3>
+<div id="outline-container-org2465829" class="outline-3">
+<h3 id="org2465829">The Flipped Classroom Hope</h3>
+<div class="outline-text-3" id="text-org2465829">
 
-<div id="Flipped-Classroom" class="figure">
+<div id="orgfbd44a1" class="figure">
 <p><img src="./flipped.png" alt="flipped.png" />
 </p>
-<p><span class="figure-number">Figure 1:</span> From: <a href="http://www.netop.com/classroom-management-software/results/flipped-classroom.htm">http://www.netop.com/classroom-management-software/results/flipped-classroom.htm</a> <a href="http://goo.gl/b0eR5a">http://goo.gl/b0eR5a</a></p>
+<p><span class="figure-number">Figure 1: </span>From: <a href="http://www.netop.com/classroom-management-software/results/flipped-classroom.htm">http://www.netop.com/classroom-management-software/results/flipped-classroom.htm</a> <a href="http://goo.gl/b0eR5a">http://goo.gl/b0eR5a</a></p>
+</div>
+</div>
 </div>
 
-</section>
-<section id="slide-sec-0-2">
-<h3 id="sec-0-2">The Standard Classroom</h3>
-<ul>
+<div id="outline-container-orge4f4e35" class="outline-3">
+<h3 id="orge4f4e35">The Standard Classroom</h3>
+<div class="outline-text-3" id="text-orge4f4e35">
+<ul class="org-ul">
 <li>Read a textbook</li>
 <li>Do something in class</li>
-
 </ul>
+</div>
+</div>
 
-</section>
-<section id="slide-sec-0-3">
-<h3 id="sec-0-3">The Flipped Classroom Cynic</h3>
-<ul>
+<div id="outline-container-orgd925f55" class="outline-3">
+<h3 id="orgd925f55">The Flipped Classroom Cynic</h3>
+<div class="outline-text-3" id="text-orgd925f55">
+<ul class="org-ul">
 <li>Watch a video</li>
 <li>Do something in class</li>
-
 </ul>
+</div>
+</div>
 
-</section>
-<section id="slide-sec-0-4">
-<h3 id="sec-0-4">The Teachable Moment</h3>
+<div id="outline-container-orgfe162ce" class="outline-3">
+<h3 id="orgfe162ce">The Teachable Moment</h3>
+<div class="outline-text-3" id="text-orgfe162ce">
 
-<div id="Teachable-Moment" class="figure">
-<p><img src="./teachablemoment.gif" alt="teachablemoment.gif" class="fragment (none roll-in)" />
+<div id="org4d419ad" class="figure">
+<p><img src="./teachablemoment.gif" alt="teachablemoment.gif" />
 </p>
-<p><span class="figure-number">Figure 2:</span> from <a href="http://reuvencarlyle36.com/2010/11/28/seattle-public-schools-a-teachable-moment/">http://reuvencarlyle36.com/2010/11/28/seattle-public-schools-a-teachable-moment/</a> &#x2013; <a href="http://goo.gl/Nq7PJo">http://goo.gl/Nq7PJo</a></p>
+<p><span class="figure-number">Figure 2: </span>from <a href="http://reuvencarlyle36.com/2010/11/28/seattle-public-schools-a-teachable-moment/">http://reuvencarlyle36.com/2010/11/28/seattle-public-schools-a-teachable-moment/</a> &#x2013; <a href="http://goo.gl/Nq7PJo">http://goo.gl/Nq7PJo</a></p>
+</div>
+</div>
 </div>
 
 
-</section>
-<section id="slide-sec-0-5">
-<h3 id="sec-0-5">Preparation for Future Learning (PFL)</h3>
-<ul>
+<div id="outline-container-org18b96e8" class="outline-3">
+<h3 id="org18b96e8">Preparation for Future Learning (PFL)</h3>
+<div class="outline-text-3" id="text-org18b96e8">
+<ul class="org-ul">
 <li>Do an exploration activity</li>
 <li>Get an "Aha!" lecture</li>
-
 </ul>
+</div>
+</div>
 
-</section>
-<section id="slide-sec-0-6">
-<h3 id="sec-0-6">PFL Stats</h3>
+<div id="outline-container-orged020b5" class="outline-3">
+<h3 id="orged020b5">PFL Stats</h3>
+<div class="outline-text-3" id="text-orged020b5">
 <p>
 Come up with a way to calculate a number that describes each of these
-data sets. 
+data sets.
 </p>
 
-<ul>
+<ul class="org-ul">
 <li>1 2 3 4 5 6 7 8 9</li>
 <li>4 5 6 4 5 6 4 5 6</li>
 <li>1 1 1 1 5 9 9 9 9</li>
-
 </ul>
+</div>
+</div>
 
-</section>
-<section id="slide-sec-0-7">
-<h3 id="sec-0-7">PFL Psychology</h3>
+<div id="outline-container-orgda086ea" class="outline-3">
+<h3 id="orgda086ea">PFL Psychology</h3>
+<div class="outline-text-3" id="text-orgda086ea">
 <p>
 Six hear these words, spoken 1 second apart.
 </p>
@@ -106,73 +327,78 @@ car, sky, apple, book, cup, lock, coat, light, bush, iron, water, house, tape, f
 hand, chair, bag
 </p>
 
-<ol>
-<li class="fragment roll-in">bag, hand, chair, cloud, sky, light</li>
-<li class="fragment roll-in">bag, chair, hand, car, sky, book, house, bush</li>
-<li class="fragment roll-in">hand, bag, chair, cloud, car, lock, dog</li>
-<li class="fragment roll-in">bag, hand, chair, dog, car, apple, sky, water, glass</li>
-<li class="fragment roll-in">bag, chair, car, iron, apple, cup, water, light</li>
-
+<ol class="org-ol">
+<li>bag, hand, chair, cloud, sky, light</li>
+<li>bag, chair, hand, car, sky, book, house, bush</li>
+<li>hand, bag, chair, cloud, car, lock, dog</li>
+<li>bag, hand, chair, dog, car, apple, sky, water, glass</li>
+<li>bag, chair, car, iron, apple, cup, water, light</li>
 </ol>
+</div>
+</div>
 
-</section>
-<section id="slide-sec-0-8">
-<h3 id="sec-0-8">PFL Treatment</h3>
-<ol>
+<div id="outline-container-org196a754" class="outline-3">
+<h3 id="org196a754">PFL Treatment</h3>
+<div class="outline-text-3" id="text-org196a754">
+<ol class="org-ol">
 <li>Analyze, lecture</li>
 <li>Summarize, lecture</li>
 <li>analyze, analyze</li>
-
 </ol>
+</div>
+</div>
 
-</section>
-<section id="slide-sec-0-9">
-<h3 id="sec-0-9">PFL Results</h3>
+<div id="outline-container-org5a2b94c" class="outline-3">
+<h3 id="org5a2b94c">PFL Results</h3>
+<div class="outline-text-3" id="text-org5a2b94c">
 
 <div class="figure">
 <p><img src="./tft.png" alt="tft.png" />
 </p>
 </div>
+</div>
+</div>
 
-</section>
-<section id="slide-sec-0-10">
-<h3 id="sec-0-10">PFL Resources</h3>
+<div id="outline-container-org854c267" class="outline-3">
+<h3 id="org854c267">PFL Resources</h3>
+<div class="outline-text-3" id="text-org854c267">
 <p>
-Efficiency and Innovation in Transfer from <a href="http://aaalab.stanford.edu/">http://aaalab.stanford.edu/</a> 
+Efficiency and Innovation in Transfer from <a href="http://aaalab.stanford.edu/">http://aaalab.stanford.edu/</a>
 </p>
+</div>
+</div>
 
-</section>
-</section>
-<section>
-<section id="slide-sec-1">
-<h2 id="sec-1">South Alabama Masters in Educational Media and Technology</h2>
-<div class="outline-text-2" id="text-1">
-</div></section>
-<section id="slide-sec-1-1">
-<h3 id="sec-1-1">Designed for teacher technology leaders</h3>
-<ul>
+<div id="outline-container-orgf2ea5a2" class="outline-2">
+<h2 id="orgf2ea5a2">South Alabama Masters in Educational Media and Technology</h2>
+<div class="outline-text-2" id="text-orgf2ea5a2">
+</div>
+<div id="outline-container-org9d114de" class="outline-3">
+<h3 id="org9d114de">Designed for teacher technology leaders</h3>
+<div class="outline-text-3" id="text-org9d114de">
+<ul class="org-ul">
 <li>Building-level technology coordinators</li>
 <li>Teachers who want to use technology</li>
-
 </ul>
+</div>
+</div>
 
-</section>
-<section id="slide-sec-1-2">
-<h3 id="sec-1-2">Problem-based Instruction</h3>
-<ul>
+<div id="outline-container-org03f9522" class="outline-3">
+<h3 id="org03f9522">Problem-based Instruction</h3>
+<div class="outline-text-3" id="text-org03f9522">
+<ul class="org-ul">
 <li><a href="http://literatecomputing.com/">http://literatecomputing.com/</a></li>
-
 </ul>
-<ul>
+<ul class="org-ul">
 <li>Solving Problems rather than following directions</li>
-
 </ul>
+</div>
+</div>
 
 
-</section>
-<section id="slide-sec-1-3">
-<h3 id="sec-1-3">Courses &#x2013; 30 Hours</h3>
-<ul>
+<div id="outline-container-orgeb984fb" class="outline-3">
+<h3 id="orgeb984fb">Courses &#x2013; 30 Hours</h3>
+<div class="outline-text-3" id="text-orgeb984fb">
+<ul class="org-ul">
 <li>EDM 510 Microcomputing Systems in Education</li>
 <li>EDM 520 Computer Applications In Education</li>
 <li>EDM 580 Information Literacy</li>
@@ -183,66 +409,31 @@ Efficiency and Innovation in Transfer from <a href="http://aaalab.stanford.edu/"
 <li>EPY 502 Psychology of Learning and Learners</li>
 <li>Elective 1</li>
 <li>Elective 2</li>
-
 </ul>
+</div>
+</div>
+</div>
 
-</section>
-</section>
-<section>
-<section id="slide-sec-2">
-<h2 id="sec-2">Thanks</h2>
+<div id="outline-container-orgb26896d" class="outline-2">
+<h2 id="orgb26896d">Thanks</h2>
+<div class="outline-text-2" id="text-orgb26896d">
 <p>
 Jay Pfaffman &lt;pfaffman@southalabama.edu&gt;
 </p>
 
 
-<ul>
+<ul class="org-ul">
 <li><a href="http://jaypfaffman.com/aetc2015/">http://jaypfaffman.com/aetc2015/</a></li>
 <li><a href="https://literatecomputing.com/c/quests">literatecomputing.com</a></li>
 <li><a href="http://www.southalabama.edu/colleges/coe/ps/emt-ms.html">http://www.southalabama.edu/colleges/coe/ps/emt-ms.html</a></li>
-
 </ul>
-</section>
-</section>
 </div>
 </div>
-
-<script src="reveal.js/lib/js/head.min.js"></script>
-<script src="reveal.js/js/reveal.js"></script>
-
-<script>
-// Full list of configuration options available here:
-// https://github.com/hakimel/reveal.js#configuration
-Reveal.initialize({
-
-controls: true,
-progress: true,
-history: false,
-center: true,
-slideNumber: true,
-rollingLinks: false,
-keyboard: true,
-overview: true,
-
-theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
-transitionSpeed: 'default',
-multiplex: {
-    secret: '', // null if client
-    id: '', // id, obtained from socket.io server
-    url: '' // Location of socket.io server
-},
-
-// Optional libraries used to extend on reveal.js
-dependencies: [
- { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
- { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
- { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-]
-});
-</script>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Jay Pfaffman</p>
+<p class="date">Created: 2022-05-31 Tue 13:35</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
 </body>
 </html>

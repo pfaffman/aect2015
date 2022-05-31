@@ -1,8 +1,8 @@
-#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/2.5.0/
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
 #+REVEAL_ROOT: reveal.js
-#+REVEAL_THEME: sky 
+#+REVEAL_THEME: sky
 #+REVEAL_THEME: simple
-#+REVEAL_THEME: serif 
+#+REVEAL_THEME: serif
 #+REVEAL_EXTRA_CSS: stylesheet.css
 #+REVEAL_HLEVEL: 1
 #+REVEAL-SLIDE-NUMBER: t
@@ -18,7 +18,7 @@
 # WTF +REVEAL_MARGIN:-10
 #+NOREVEAL_MIN_SCALE: 1
 #+NOREVEAL_MAX_SCALE: 4
-#+OPTIONS: toc:nil reveal_mathjax:t width:5 
+#+OPTIONS: toc:nil reveal_mathjax:t width:5
 #+REVEAL_TRANS: zoom
 #+REVEAL_TRANS: concave
 #+REVEAL_TRANS: none
@@ -41,7 +41,7 @@
 
 ** The Teachable Moment
 
-#+ATTR_REVEAL: :frag (none roll-in) 
+#+ATTR_REVEAL: :frag (none roll-in)
 #+CAPTION: from http://reuvencarlyle36.com/2010/11/28/seattle-public-schools-a-teachable-moment/ -- http://goo.gl/Nq7PJo
 #+NAME:   Teachable Moment
 [[./teachablemoment.gif]]
@@ -50,12 +50,12 @@
 ** Preparation for Future Learning (PFL)
 
 - Do an exploration activity
-- Get an "Aha!" lecture 
+- Get an "Aha!" lecture
 
-** PFL Stats 
+** PFL Stats
 
 Come up with a way to calculate a number that describes each of these
-data sets. 
+data sets.
 
 - 1 2 3 4 5 6 7 8 9
 - 4 5 6 4 5 6 4 5 6
@@ -68,7 +68,7 @@ Six hear these words, spoken 1 second apart.
 car, sky, apple, book, cup, lock, coat, light, bush, iron, water, house, tape, file, glass, dog, cloud,
 hand, chair, bag
 
-#+ATTR_REVEAL: :frag (roll-in roll-in roll-in roll-in roll-in ) 
+#+ATTR_REVEAL: :frag (roll-in roll-in roll-in roll-in roll-in )
 1. bag, hand, chair, cloud, sky, light
 2. bag, chair, hand, car, sky, book, house, bush
 3. hand, bag, chair, cloud, car, lock, dog
@@ -78,7 +78,7 @@ hand, chair, bag
 ** PFL Treatment
 
 1. Analyze, lecture
-2. Summarize, lecture  
+2. Summarize, lecture
 3. analyze, analyze
 
 ** PFL Results
@@ -87,7 +87,7 @@ hand, chair, bag
 
 ** PFL Resources
 
-Efficiency and Innovation in Transfer from http://aaalab.stanford.edu/ 
+Efficiency and Innovation in Transfer from http://aaalab.stanford.edu/
 
 * South Alabama Masters in Educational Media and Technology
 
@@ -100,9 +100,9 @@ Efficiency and Innovation in Transfer from http://aaalab.stanford.edu/
 
 
 
-#+ATTR_REVEAL: :frag (none roll-in) 
-- http://literatecomputing.com/ 
-#+ATTR_REVEAL: :frag (none roll-in) 
+#+ATTR_REVEAL: :frag (none roll-in)
+- http://literatecomputing.com/
+#+ATTR_REVEAL: :frag (none roll-in)
 - Solving Problems rather than following directions
 
 
